@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link 
+          rel="stylesheet"
+          href="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-gg0yR0iXCbNQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous"/>
+    
+    <script src="http://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <link rel="sylesheet" href="src/styles.css"/>
+    <title>Weather App</title>
+</head>
+<body>
+<form>
+    <div class="content">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <from id="seaech-from" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+              <input
+                type="search"
+                placeholder="Enter your username"
+                class="form-control"
+                id="city-input"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-3">
+              <input 
+                type="submit" 
+                value="Search" 
+                class="btn btn-primary m-100"
+              />
+            </div>
+           </div>
+          </from>
+          <div class="overview">
+            <h1 id="city">
+                Odessa
+            </h1>
+            <ul>
+              <li>
+                Last updated: <span id="data">Thursday 22:42</span>
+              </li>
+              <li id="description">
+                Broken clouds
+              </li>  
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+             <div class="d-flex weather-temperature">
+                <img src="" alt="Clear" id="icon" class="float-left" />
+             <div class="float-left">
+                  <strong id="temperature">19</strong
+                  ><span class="units">°C</span>
+                  </div>
+                </div>
+            </div>
+                <div class="col-6">
+                <ul>
+                    <li>Humidity: <span id="humidity"></span>%</li>
+                    <li>Wind: <span id="wind"></span>m/h</li>
+                </ul>
+            </div>
+          </div> 
+          <div class="weather-forecast" id="forecast"></div>
+         </div> 
+         <small>
+          <a 
+            href="https://github.com/Kseniia-user/week-7" 
+            target="_blank"
+            >Open-source code</a
+            >, by Kseniia Mostova
+        </small>  
+        </div>
+      </div>    
+    <script src="src/index.js"></script>
+  </body>
+</html>
